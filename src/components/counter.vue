@@ -17,6 +17,24 @@
 export default 
     {
         name:'Counter',
+        el:'counter-app',
+      data () {
+        return {
+            count: 0,
+        };
+    },
+    
+    methods:{
+        increment () {
+            this.count += 1;
+        },
+        reset() {
+        this.count = 0;
+        },
+        decrement () {
+            this.count -= 1;
+        }  
+  }
     }
 </script>
 <style>
